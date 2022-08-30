@@ -19,9 +19,13 @@ linter:
  rules:
    - only_throw_errors
 
-# analyzer:
-#   exclude:
-#     - path/to/excluded/files/**
+dart_code_metrics:
+  rules:
+    - newline-before-return
+
+analyzer:
+  plugins:
+    - dart_code_metrics
 
 # For more information about the core and recommended set of lints, see
 # https://dart.dev/go/core-lints
